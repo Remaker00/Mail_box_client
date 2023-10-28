@@ -1,0 +1,83 @@
+/* CartItm.css */
+.cart-container {
+    position: absolute;
+    top: 11%;
+    right: 0;
+    width: 60%;
+    background-color: rgba(254, 254, 254, 0.864);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: auto;
+    overflow-y: auto;
+    text-align: center;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-image {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-control button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item-quantity {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.purchase-button {
+    margin-top: 4%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background-color: #0f1811;
+}

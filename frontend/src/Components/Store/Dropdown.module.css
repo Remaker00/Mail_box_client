@@ -1,0 +1,60 @@
+.dropdownContainer {
+    position: relative;
+}
+
+.menuButton {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    padding: 12px;
+    background: transparent;
+    border: none;
+}
+
+.menuIcon {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.dropdownMenu {
+    text-align: center;
+    position: absolute;
+    width: 400%;
+    top: 138%;
+    left: -20px;
+    background-color: #fff;
+    border: 1px solid #040404;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: left 2s, opacity 0.3s;
+}
+
+.dropdownMenu.active {
+    left: 0;
+    opacity: 1;
+}
+
+.dropdownMenu li {
+    border: 1px solid rgba(223, 220, 220, 0.363);
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.link-reset {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.dropdownMenu li:hover {
+    background-color: #f0f0f0;
+}

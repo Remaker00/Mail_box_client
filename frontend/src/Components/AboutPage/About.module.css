@@ -1,0 +1,33 @@
+/* Add your CSS to style the About page */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+.container h1  {
+    text-align: center;
+    color: white;
+    background-color:  #3333338c;
+    margin-top: 0%;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333; /* Add your desired text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a text shadow for style */
+}
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px; /* Adjust the top margin as needed */
+    font-size: 16px; /* Add your desired font size */
+    line-height: 1.5; /* Adjust the line height for readability */
+    color: #555; /* Add your desired text color */
+}
+
+/* You can add more styles as needed for specific elements within the content */

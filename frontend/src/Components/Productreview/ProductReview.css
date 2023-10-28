@@ -1,0 +1,65 @@
+/* ProductReview.css */
+
+.product-review-container {
+    float: right;
+    border: 3px solid rgba(184, 182, 182, 0.451);
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-review-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-review-image{
+    float: left;
+    width: 40%;
+    margin-left: 8px;
+}
+
+.product-review-image button {
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.product-review-image img{
+    display: flex;
+    margin-top: 10;
+    width: 100%;
+}
+
+.product-review-description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.product-review-price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.customer-reviews-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.customer-review {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.customer-review-rating {
+    font-weight: bold;
+}
+
+.customer-review-comment {
+    margin-top: 5px;
+}
+

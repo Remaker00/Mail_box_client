@@ -1,0 +1,48 @@
+.order-container {
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.order-container h2 {
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.order-item {
+    border: 2px solid #dddcdc;
+    background-color: #e9e7e7;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 6%;
+    display: flex;
+    width: 86%;
+    height: 90%;
+}
+
+.order-item img {
+    left: 0;
+    width: 20%;
+}
+
+.order-item p {
+    width: 50%;
+}
+
+.item-name {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    height: 10%;
+}
+
+.item-price {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    height: 10%;
+}
+
+.item-price span {
+    color: blue;
+}
