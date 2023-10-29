@@ -3,7 +3,7 @@
     padding: 20px;
     max-width: 90vh;
     margin: 50px auto;
-    height: 60vh;
+    height: 100%;
 }
 
 
@@ -48,6 +48,7 @@
 }
 
 .email-editor textarea {
+    margin-top: -60px;
     width: 100%;
     height: 150px;
 }
@@ -71,14 +72,30 @@
     background-color: #0056b3;
 }
 
-@media (max-width: 770px) {
+.editor {
+    border: 2px solid black;
+}
+
+@media (max-width: 800px) {
     .email-editor {
         border: 1px solid #000000;
         padding: 20px;
         max-width: 90vh;
         margin-left: 10px;
         margin-right: 10px;
-        height: 60vh;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .email-editor {
+        border: 1px solid #000000;
+        padding: 20px;
+        max-width: 90vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
     }
 
 }
