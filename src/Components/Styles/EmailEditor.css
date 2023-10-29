@@ -1,0 +1,84 @@
+.email-editor {
+    border: 1px solid #000000;
+    padding: 20px;
+    max-width: 90vh;
+    margin: 50px auto;
+    height: 60vh;
+}
+
+
+.email-editor div {
+    margin-bottom: 10px;
+}
+
+.email-editor label {
+    margin-right: 10px;
+    display: inline;
+    font-weight: bold;
+}
+
+.mailbox {
+    margin-top: -26px;
+    margin-left: 30px;
+    width: 200px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.mailogo {
+    padding: 2px;
+    margin: 3px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+
+}
+
+.mailbox input {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0px;
+    color: black;
+}
+
+.email-editor input {
+    width: 79%;
+    color: black;
+}
+
+.email-editor textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.emailicons {
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    width: 300px;
+    margin-left: 110px;
+    margin-top: -40px;
+}
+
+.email-editor button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.email-editor button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 770px) {
+    .email-editor {
+        border: 1px solid #000000;
+        padding: 20px;
+        max-width: 90vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 60vh;
+    }
+
+}
