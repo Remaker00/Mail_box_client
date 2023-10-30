@@ -29,7 +29,6 @@ const Inbox = () => {
 
     const handleEmailClick = (email) => {
         if (!email.read) {
-            console.log(email._id);
             axios.put(`http://localhost:4000/mail/mark-read/${email._id}`)
                 .then((response) => {
                     const updatedEmails = emails.map((e) =>
@@ -46,6 +45,25 @@ const Inbox = () => {
             setSelectedEmail(email);
         }
     };
+
+    const handledelete = (e, email) => {
+        e.stopPropagation();
+
+        console.log(email._id);
+        axios.delete(`http://localhost:4000/mail/deletemail/${email._id}`)
+            .then((response) => {
+                if (response.status === 200) {
+                    alert('Email deleted successfully');
+                    fetchEmails();
+                } else {
+                    alert('Failed to delete email');
+                }
+            })
+            .catch((error) => {
+                alert('An error occurred while deleting the email:', error);
+            });
+
+    }
 
 
     useEffect(() => {
@@ -73,6 +91,7 @@ const Inbox = () => {
                             <div className="email-subject">{email.subject}</div>
                             <div className="email-message">{email.description}</div>
                             <div className="email-date">{formatDateString(email.sentDate)}</div>
+                            <button onClick={(e) => handledelete(e, email)}>X</button>
                         </div>
                     ))}
                 </div>

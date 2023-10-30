@@ -77,6 +77,13 @@
   align-items: center;
 }
 
+.email-list button{
+  padding: 10px;
+  border: 2px solid black;
+  background-color: red;
+  cursor: pointer;
+}
+
 
 @media (max-width: 833px) {
   .email-list {
