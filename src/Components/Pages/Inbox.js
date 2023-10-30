@@ -68,6 +68,16 @@ const Inbox = () => {
 
     useEffect(() => {
         fetchEmails();
+
+        const timer = setInterval(() => {
+            fetchEmails();
+        }, 2000);
+
+        // Cleanup the timer when the component unmounts
+        return () => {
+            clearInterval(timer);
+        };
+
     }, []);
 
     const formatDateString = (date) => {
