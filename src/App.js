@@ -3,6 +3,7 @@ import SignupForm from './Components/Pages/SignupForm';
 import LoginForm from './Components/Pages/LoginForm';
 import EmailEditor from './Components/Pages/EmailEditor';
 import Inbox from './Components/Pages/Inbox';
+import SentMail from './Components/Pages/Sentmail';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/login-form" element={<LoginForm />} />
           <Route path="/mail-box-client" element={<EmailEditor />} />
           <Route path='/mail-inbox' element={<Inbox />} />
+          <Route path='/mail-sent' element={<SentMail />} />
         </Routes>
       </Router>
     </div>

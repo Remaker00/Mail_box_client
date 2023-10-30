@@ -17,6 +17,9 @@ const Navbar = () => {
           <Link to="/mail-inbox">Inbox</Link>
         </li>
         <li>
+          <Link to="/mail-sent">Sent</Link>
+        </li>
+        <li>
           <Link to="/mail-box-client">Compose</Link>
         </li>
         <li>
