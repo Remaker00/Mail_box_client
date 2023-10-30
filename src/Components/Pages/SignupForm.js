@@ -23,7 +23,7 @@ const SignupForm = () => {
             console.log("Data IS:", dataToSend);
 
             axios.post('http://localhost:4000/user/addUser', { dataToSend })
-                .then((response) => {
+                .then(() => {
                     alert('Account Successfully Created: ');
                     setFormData({
                         email: '',

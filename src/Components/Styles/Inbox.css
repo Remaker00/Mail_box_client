@@ -1,0 +1,90 @@
+/* Inbox.css */
+.email-list {
+  border: 1px solid #ccc;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(220, 220, 220);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Apply these styles to the container of each email item */
+.email {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Style the left part (sender's email) */
+.email-sender {
+  padding: 2px;
+  border-radius: 10px;
+  background-color: rgb(217, 217, 217);
+  flex: 1;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+/* Style the middle part (subject) */
+.email-subject {
+  margin-left: 50px;
+  width: 100px;
+  flex: 2;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Style the right part (message) */
+.email-message {
+  margin-left: 10px;
+  width: 100px;
+  flex: 3;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Style the date on the right */
+.email-date {
+  flex: 1;
+  text-align: right;
+}
+
+.blue-dot {
+  margin-top: 6px;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  z-index: 1000;
+  /* Ensure it appears above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 833px) {
+  .email-list {
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(220, 220, 220);
+    margin-top: 10px;
+  }
+
+}
